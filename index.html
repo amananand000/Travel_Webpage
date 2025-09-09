@@ -3,51 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Adventures</title>
+    <title>Wanderer's Journal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Wanderlust Adventures</h1>
-        <nav>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Wanderer's Journal</h1>
+            <p>Adventure awaits, go find it.</p>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Your Journey Begins Here</h2>
-            <p>Explore the world's most breathtaking destinations. From serene beaches to majestic mountains, find your next adventure with us. 🌍✈️</p>
-            <div class="image-gallery">
-                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTkyMzF8MHwxfHNlYXJjaHwxfHxhZHZlbnR1cmUlMjB0cmF2ZWx8ZW58MHx8fHwxNjA5NDU5MjAw&ixlib=rb-1.2.1&q=80&w=1080" alt="Adventure Travel">
-                <img src="https://images.unsplash.com/photo-1542127914-f58c42a27546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTkyMzF8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHZpZXd8ZW58MHx8fHwxNjA5NDU5MjAw&ixlib=rb-1.2.1&q=80&w=1080" alt="Mountain View">
+        <section id="about" class="hero-section">
+            <div class="hero-text">
+                <h2>Explore the Unseen. Discover the Unforgettable.</h2>
+                <p>We believe travel is more than just a trip—it's an experience that changes you. Join us as we venture off the beaten path to explore the world's most stunning landscapes.</p>
+                <a href="#destinations" class="cta-button">Start Your Journey</a>
             </div>
         </section>
 
-        <section id="destinations">
+        <section id="destinations" class="destinations-section">
             <h2>Popular Destinations</h2>
-            <div class="destination-card">
-                <h3>Maldives</h3>
-                <p>Relax on pristine white sand beaches and snorkel in crystal clear waters. 🏝️</p>
+            <div class="card-container">
+                <div class="destination-card">
+                    <img src="images/maldives.jpg" alt="Maldives Beach">
+                    <div class="card-text">
+                        <h3>Maldives</h3>
+                        <p>Dive into crystal clear waters and relax on sun-kissed beaches.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/alps.jpg" alt="Swiss Alps">
+                    <div class="card-text">
+                        <h3>Swiss Alps</h3>
+                        <p>Hike breathtaking trails and witness majestic mountain peaks.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/adventure.jpg" alt="Adventure Travel">
+                    <div class="card-text">
+                        <h3>Patagonia</h3>
+                        <p>A true wilderness experience for the daring adventurer.</p>
+                    </div>
+                </div>
             </div>
-            <div class="destination-card">
-                <h3>Swiss Alps</h3>
-                <p>Hike through stunning alpine landscapes and enjoy breathtaking mountain views. 🏔️</p>
-            </div>
-            <div class="image-gallery">
-                 <img src="https://images.unsplash.com/photo-1549487928-8b9a117b3d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTkyMzF8MHwxfHNlYXJjaHwxMHx8bWFsZGl2ZXMlMjBiZWFjaHxlbnwwfHx8fDE2MDk0NTkyMDA&ixlib=rb-1.2.1&q=80&w=1080" alt="Maldives Beach">
-                 <img src="https://images.unsplash.com/photo-1550953683-f1a26d15b0b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTkyMzF8MHwxfHNlYXJjaHwyMHx8c3dpc3MlMjBhbHBzfGVufDB8fHx8MTYwOTQ1OTIwMA&ixlib=rb-1.2.1&q=80&w=1080" alt="Swiss Alps">
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Our Gallery</h2>
+            <div class="photo-grid">
+                <img src="images/mountain.jpg" alt="Mountain View">
+                <img src="images/beach.jpg" alt="Tropical Beach">
+                <img src="images/city.jpg" alt="Cityscape">
+                <img src="images/forest.jpg" alt="Deep Forest">
+                <img src="images/desert.jpg" alt="Desert dunes">
+                <img src="images/aurora.jpg" alt="Northern Lights">
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Wanderlust Adventures</p>
+        <p>&copy; 2025 Wanderer's Journal. All rights reserved.</p>
     </footer>
 </body>
 </html>
